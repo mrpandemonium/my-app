@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>Feets?</p>
+      <p>Little Lemon LLC</p>
     </footer>
   );
 }

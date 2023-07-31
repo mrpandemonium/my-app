@@ -1,19 +1,31 @@
+import "../App.css";
+import logo from "../Images/Logo.svg";
+
 function Nav() {
   return (
-    <>
-      <img src="file:///C:/Users/wince/AppData/Local/Temp/Temp1_qbZ2Wr5jTZya6-dDlPrGwQ_5b3b588277444859a71d1c78010d06e1_Applying-design-fundmantals-in-Figma---Assets%20(1).zip/icons_assets/Logo.svg" />
-      <ul>
+    <nav>
+      <img src={logo} alt="Little Lemon Logo" className="logo" />
+      <ul className="list">
         <li>
-          <a href="/Header">Header</a>
+          <a href="/Header">Home</a>
         </li>
         <li>
-          <a href="/Main">Main</a>
+          <a href="/About">About</a>
         </li>
         <li>
-          <a href="/Footer">Footer</a>
+          <a href="/Menu">Menu</a>
+        </li>
+        <li>
+          <a href="/Reservations">Reservations</a>
+        </li>
+        <li>
+          <a href="/Order">Order Online</a>
+        </li>
+        <li>
+          <a href="/Login">Login</a>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }
 
