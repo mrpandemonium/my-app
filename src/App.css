@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+}
+
 /* Header/Nav */
 nav {
   display: grid;
@@ -21,26 +27,26 @@ a {
   color: black;
 }
 /* Main */
-main {
+.about {
   background-color: #495e57;
   margin: auto;
 }
-
-main h1 {
+.about > h1 {
   color: #f4ce14;
 }
 
-h2,
-p {
-  color: #edefee;
+.chef {
+  float: right;
+  margin-bottom: 100%;
 }
 
 .description {
   display: grid;
+  color: #edefee;
   text-overflow: clip;
   grid-template-columns: 1fr;
-  padding-left: 75vh;
-  padding-right: 75vh;
+  margin-left: 100px;
+  margin-right: 800px;
 }
 
 .reserve {
@@ -51,6 +57,18 @@ p {
   margin: 5px;
 }
 
-.chef {
-  float: right;
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonals {
+  text-align: center;
+  background-color: #495e57;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
 }
